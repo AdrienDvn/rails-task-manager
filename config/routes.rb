@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+
+  # Rails.application.routes.draw do
+  #   resources :restaurants
+  # end
+
   get "/tasks", to: "tasks#index", as: :home
   get "tasks/new", to: "tasks#new", as: :add
   post "tasks", to: "tasks#create"
