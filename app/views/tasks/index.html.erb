@@ -1,0 +1,15 @@
+<h1>Hi from index</h1>
+
+<ul>
+  <% @tasks.each do |task| %>
+    <li><%= link_to task.title, task_path(task.id)%></li>
+  <% end %>
+</ul>
+
+
+<%# Links
+<a href="tasks/<%= task.id "><%= task.title %></a>
+
+<%# Use link_to %>
+<%#
+<%= link_to task.title, task_path(task.id) %>
